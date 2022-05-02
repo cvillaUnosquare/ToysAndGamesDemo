@@ -3,7 +3,10 @@ using ToysAndGames.Model.Contexts;
 using ToysAndGames.Services.Contracts;
 using ToysAndGames.Services.Services;
 
+<<<<<<< HEAD
 var MyAllowSpecificOrigins = "_ToysPolicy";
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -18,6 +21,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+<<<<<<< HEAD
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(MyAllowSpecificOrigins, policy =>
@@ -26,6 +30,8 @@ builder.Services.AddCors(options =>
     });
 });
 
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
 builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
@@ -44,6 +50,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+<<<<<<< HEAD
 app.UseCors(MyAllowSpecificOrigins);
 
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
 app.Run();

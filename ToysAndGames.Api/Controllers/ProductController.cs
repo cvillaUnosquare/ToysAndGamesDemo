@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+=======
+﻿using Microsoft.AspNetCore.Mvc;
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
 using ToysAndGames.Entities.Entities;
 using ToysAndGames.Services.Contracts;
 
 namespace ToysAndGames.Api.Controllers
 {
+<<<<<<< HEAD
     [EnableCors("_ToysPolicy")]
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
     [ApiController]
     [Route("api/[controller]")]
     public class ProductController : Controller
@@ -75,8 +82,11 @@ namespace ToysAndGames.Api.Controllers
             #region CreateProduct
             try
             {
+<<<<<<< HEAD
                 ModelState.Remove("Id");
 
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
                 if(!ModelState.IsValid)
                     return BadRequest(entity);
 

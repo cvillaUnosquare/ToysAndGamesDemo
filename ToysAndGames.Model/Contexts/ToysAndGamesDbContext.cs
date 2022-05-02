@@ -16,6 +16,7 @@ namespace ToysAndGames.Model.Contexts
         }
 
         public DbSet<Product> Products { get; set; }
+<<<<<<< HEAD
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -47,5 +48,7 @@ namespace ToysAndGames.Model.Contexts
             });
             #endregion
         }
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
     }
 }

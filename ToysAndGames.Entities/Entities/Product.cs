@@ -8,7 +8,10 @@ namespace ToysAndGames.Entities.Entities
     {
         #region properties
         [Key]
+<<<<<<< HEAD
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
         public int Id { get; set; }
 
         [Display(Name = "Name", Order = 1)]
@@ -33,7 +36,10 @@ namespace ToysAndGames.Entities.Entities
         [Required]
         [Range(0, 1000, ErrorMessage = "The value must be in {0} to {1}")]
         [DataType(DataType.Currency)]
+<<<<<<< HEAD
         [Column(TypeName = "decimal(18,2)")]
+=======
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
         public decimal Price { get; set; }
         #endregion
 

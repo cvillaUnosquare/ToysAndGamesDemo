@@ -78,6 +78,15 @@ namespace ToysAndGames.TestApi
             Assert.True(response?.HasError);
 
             Assert.Equal("The key of product not registered!", response?.ExcepcionMessage);
+<<<<<<< HEAD
+=======
+
+            //Action act = () => service?.GetProduct(0);
+
+            //ArgumentException exc = Assert.Throws<ArgumentException>(() => act());
+
+            //Assert.Throws<ArgumentException>(() => service?.GetProduct(0));
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
             #endregion
         }
 
@@ -103,7 +112,11 @@ namespace ToysAndGames.TestApi
 
             var newProduct = new Product
             {
+<<<<<<< HEAD
                 Name = "Woody sheriff",
+=======
+                Name = "Woody sherif",
+>>>>>>> 0aaa84207e6491bd2412b80bd7b243f04156015b
                 Description = "A little of description for product",
                 AgeRestriction = 3,
                 Company = "Disney",
