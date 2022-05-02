@@ -1,0 +1,92 @@
+<div class="container">
+    <h1>Update Product</h1>
+    <hr class="clearfix" />
+    <form id="formProd" [formGroup]="formProd" (ngSubmit)="submit()">
+        
+        <div class="form-group">
+            <label for="id">Id:</label>
+            <input
+                formControlName="id"
+                id="id"
+                type="text"
+                readonly
+                [(ngModel)]="product.id"
+                class="form-control" />
+            <div *ngIf="f['id'].touched && f['id'].invalid" class="alert alert-danger">
+                <div *ngIf="f['id'].errors && f['id'].errors['required']">id is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+                formControlName="name"
+                id="name"
+                type="text"
+                [(ngModel)]="product.name"
+                class="form-control" />
+            <div *ngIf="f['name'].touched && f['name'].invalid" class="alert alert-danger">
+                <div *ngIf="f['name'].errors && f['name'].errors['required']">Name is required.</div>
+            </div>
+        </div>
+   
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+                formControlName="description"
+                id="description"
+                type="text"
+                [ngModel]="product.description"
+                class="form-control">
+            </textarea>
+            <div *ngIf="f['description'].touched && f['description'].invalid" class="alert alert-danger">
+                <div *ngIf="f['description'].errors && f['description'].errors['required']">Description is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input
+                formControlName="company"
+                id="company"
+                type="text"
+                [ngModel]="product.company"
+                class="form-control" />
+            <div *ngIf="f['company'].touched && f['company'].invalid" class="alert alert-danger">
+                <div *ngIf="f['company'].errors && f['company'].errors['required']">Company is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="ageRestriction">Age restriction:</label>
+            <input
+                formControlName="ageRestriction"
+                id="ageRestriction"
+                type="number"
+                [ngModel]="product.ageRestriction"
+                class="form-control" />
+            <div *ngIf="f['ageRestriction'].touched && f['ageRestriction'].invalid" class="alert alert-danger">
+                <div *ngIf="f['ageRestriction'].errors && f['ageRestriction'].errors['required']">Age Restriction is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input
+                formControlName="price"
+                id="price"
+                type="number"
+                [(ngModel)]="product.price"
+                class="form-control" />
+            <div *ngIf="f['price'].touched && f['price'].invalid" class="alert alert-danger">
+                <div *ngIf="f['price'].errors && f['price'].errors['required']">Price is required.</div>
+            </div>
+        </div>
+        <hr class="clearfix" />
+        <div>
+            <a href="#" routerLink="/product/index" class="btn btn-warning">Back</a>
+            <!--<button class="btn btn-primary" type="submit" [disabled]="!formProd.valid">Submit</button>-->
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+        
+    </form>
+</div>
+

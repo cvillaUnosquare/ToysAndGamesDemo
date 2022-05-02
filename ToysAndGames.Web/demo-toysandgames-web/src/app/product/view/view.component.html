@@ -1,0 +1,41 @@
+<div class="container">
+    <h1>View Product</h1>
+    <hr class="clearfix" />
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div>
+                <strong>ID:</strong>
+                <p>{{ product.id }}</p>
+            </div>
+            
+            <div>
+                <strong>Name:</strong>
+                <p>{{ product.name }}</p>
+            </div>
+        
+            <div>
+                <strong>Description:</strong>
+                <p>{{ product.description }}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div>
+                <strong>Age restriction:</strong>
+                <p>{{ product.ageRestriction }}</p>
+            </div>
+            
+            <div>
+                <strong>Company:</strong>
+                <p>{{ product.company }}</p>
+            </div>
+            
+            <div>
+                <strong>Price:</strong>
+                <p>{{ product.price }}</p>
+            </div>
+        </div>
+    </div>
+    <hr class="clearfix" />
+    <a href="#" routerLink="/product/index" class="btn btn-primary">Back</a>
+    
+</div>

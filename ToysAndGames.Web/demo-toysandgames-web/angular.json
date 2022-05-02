@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "WebApp": {
+    "demo-toysandgames-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/web-app",
+            "outputPath": "dist/demo-toysandgames-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "WebApp:build:production"
+              "browserTarget": "demo-toysandgames-web:build:production"
             },
             "development": {
-              "browserTarget": "WebApp:build:development"
+              "browserTarget": "demo-toysandgames-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "WebApp:build"
+            "browserTarget": "demo-toysandgames-web:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "WebApp"
+  "defaultProject": "demo-toysandgames-web"
 }
